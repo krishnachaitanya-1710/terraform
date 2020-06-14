@@ -31,7 +31,7 @@ variable "environment" {
 }
 
 module "sandbox_vpc" {
-  source                     = "../modules/vpc"
+  source                     = "..\/modules/vpc"
   availability_zones         = var.availability_zones
   environment                = var.environment
   vpc_cidr_block             = "172.33.0.0/16"
